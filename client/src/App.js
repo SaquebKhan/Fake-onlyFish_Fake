@@ -12,7 +12,7 @@ function App() {
     <div className="App">
       <header className="App-header">
 
-        <h1>OnlyFish</h1>
+        <h1>Only<span className="fish">Fish</span></h1>
         <form>
           <input type="text" placeholder="E-mail" className="email-input" />
         </form>
