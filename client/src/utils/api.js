@@ -32,7 +32,8 @@ export const getMe = (token) => {
   
   // make a search to google books api
   // https://www.googleapis.com/books/v1/volumes?q=harry+potter
-  export const searchGoogleBooks = (query) => {
-    return fetch(`https://api.marinas.com/v1/marinas/search`);
+  export const searchMarina = (query) => {
+    var apiKey= "HK69kgKE8cMV4-5s1b68"
+    return fetch(`https://api.marinas.com/v1/marinas/search&apikey=${apiKey}`);
   };
   
