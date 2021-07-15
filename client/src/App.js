@@ -1,34 +1,20 @@
 import React from 'react';
-// import axios from 'axios';
-// import './App.css';
-import MarinaContainer from "./components/MarinaContainer";
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import SearchMarinas from './pages/SearchMarinas';
+// import NavTabs from './components/NavTabs';
 
-const App = () => <MarinaContainer />;
-
-// function App() {
-
-
-
-
-
-
-//   return (
-//     <div className="App">
-//       <header className="App-header">
-
-//         <h1>Only<span className="fish">Fish</span></h1>
-//         <form>
-//           <input type="text" placeholder="E-mail" className="email-input" />
-//         </form>
-//         <form>
-//           <input type="text" placeholder="Password" className="password-input" />
-//         </form>
-//         <button type="button">LOGIN</button>
-//         <p>Dont have an account yet?</p>
-//         <a href="#" className="sign-up">Sign up for OnlyFish.com</a>
-//       </header>
-//     </div>
-//   );
-// }
+function App() {
+  return (
+    <Router>
+      <>
+      
+      <Switch>
+        <Route exact path='/' component={SearchMarinas} />
+        <Route render={() => <h1 className='display-2'>Wrong page!</h1>} />
+      </Switch>
+      </>
+    </Router>
+  );
+}
 
 export default App;
