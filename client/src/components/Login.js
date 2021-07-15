@@ -13,8 +13,6 @@ const Login = () => {
                     <input type="text" placeholder="Password" className="password-input" />
                 </form>
                 <button type="button">LOGIN</button>
-                <p>Dont have an account yet?</p>
-                <a href="#" className="sign-up">Sign up for OnlyFish.com</a>
             </header>
         </div>
     )
