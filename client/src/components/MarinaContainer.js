@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import NavTabs from './NavTabs';
-import Home from './pages/Home';
-import Donation from './pages/Donation';
-import Blog from './pages/Blog';
-import Contact from './pages/Contact';
+import Home from '.components/pages/Home';
+import Donation from '.components/pages/Donation';
+import Blog from '.components/pages/Blog';
+import Contact from '.components/pages/Contact';
 
-export default function PortfolioContainer() {
+export default function MarinaContainer() {
   const [currentPage, setCurrentPage] = useState('Home');
 
   // This method is checking to see what the value of `currentPage` is. Depending on the value of currentPage, we return the corresponding component to render.
