@@ -30,7 +30,7 @@ const SearchMarinas = () => {
                             </Col>
                             <Col xs={12} md={4}>
                                 <Button type='submit' variant='dark' size='lg'>
-                                    Submit Search
+                                    Click to Search
                                 </Button>
                             </Col>
                         </Form.Row>
