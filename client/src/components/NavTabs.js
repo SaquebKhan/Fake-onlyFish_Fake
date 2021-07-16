@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Navbar, Nav, Container, Modal, Tab } from 'react-bootstrap';
+// import Blog from '.pages/Blog/Blog';
+// import Donation from '.pages/Donation/Donation';
+// import Contact from '.pages/Contact/Contact';
 import Signup from './Signup';
 import Login from './Login';
 
@@ -22,6 +25,15 @@ const AppNavbar = () => {
             <Nav className='ml-auto'>
               <Nav.Link as={Link} to='/'>
                 Home
+              </Nav.Link>
+              <Nav.Link as={Link} to='/Blog'>
+                Blog
+              </Nav.Link>
+              <Nav.Link as={Link} to='/Donation'>
+                Donation
+              </Nav.Link>
+              <Nav.Link as={Link} to='/Contact'>
+                Contact
               </Nav.Link>
               {/* if user is logged in show saved books and logout */}
               {Auth.loggedIn() ? (
