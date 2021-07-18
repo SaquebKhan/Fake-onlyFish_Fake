@@ -26,13 +26,13 @@ const AppNavbar = () => {
               <Nav.Link as={Link} to='/'>
                 Home
               </Nav.Link>
-              <Nav.Link as={Link} to='/Blog'>
+              <Nav.Link as={Link} to='./pages/Blog/Blog'>
                 Blog
               </Nav.Link>
-              <Nav.Link as={Link} to='/Donation'>
+              <Nav.Link as={Link} to='./pages/Donation/Donation'>
                 Donation
               </Nav.Link>
-              <Nav.Link as={Link} to='/Contact'>
+              <Nav.Link as={Link} to='./pages/Contact/Contact'>
                 Contact
               </Nav.Link>
               {/* if user is logged in show saved books and logout */}
